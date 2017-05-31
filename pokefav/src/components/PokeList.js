@@ -12,11 +12,11 @@ export class PokeList extends Component {
   handleFavorite(pokemon){
     if (pokemon.favorite === true){
       return (
-        <Icon name="md-star" style={{color: 'black'}} onPress={()=>{this.props.unfavoritePokemon(pokemon)}}/>
+        <Icon name="md-star" style={{fontSize: 27, color: 'black'}} onPress={()=>{this.props.unfavoritePokemon(pokemon)}}/>
       )
     } else {
       return (
-        <Icon name="md-star-outline" style={{color: 'black'}} onPress={()=>{this.props.favoritePokemon(pokemon)}}/>
+        <Icon name="md-star-outline" style={{fontSize: 27, color: 'black'}} onPress={()=>{this.props.favoritePokemon(pokemon)}}/>
       )
     }
   }
@@ -25,22 +25,24 @@ export class PokeList extends Component {
     return (
       <Container>
         <Content>
-          <List>
-            {this.props.pokemons.sort(function(a, b) {
-                return (a.id - b.id);
-            }).map(pokemon=>
-              <ListItem icon key={pokemon.id}>
-                  <Left>
-                    <Thumbnail source={{ uri: 'http://assets.pokemon.com/assets/cms2/img/pokedex/detail/' + ('000' + pokemon.id.toString()).substr(-3) + '.png' }}/>
-                  </Left>
-                  <Body>
-                    <Text>{pokemon.name}</Text>
-                  </Body>
-                  <Right>
-                    {this.handleFavorite(pokemon)}
-                  </Right>
-              </ListItem>
-            )}
+          <List 
+          dataArray={this.props.pokemons.sort(function(a, b) {
+            return (a.id - b.id);
+          })}
+          renderRow={(pokemon)=>
+            <ListItem icon key={pokemon.id}>
+                <Left>
+                  <Thumbnail source={{ uri: 'http://assets.pokemon.com/assets/cms2/img/pokedex/detail/' + ('000' + pokemon.id.toString()).substr(-3) + '.png' }}/>
+                </Left>
+                <Body>
+                  <Text>{pokemon.name}</Text>
+                </Body>
+                <Right>
+                  {this.handleFavorite(pokemon)}
+                </Right>
+            </ListItem>
+          }>
+            
           </List>
         </Content>
       </Container>
