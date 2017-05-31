@@ -1,32 +1,49 @@
 import React, { Component } from 'react'
-import { Content, List, ListItem, Thumbnail, Text, Body, Left, Icon, Right } from 'native-base';
+import { Container, Content, List, ListItem, Thumbnail, Text, Body, Left, Icon, Right } from 'native-base';
 import { connect } from 'react-redux'
 
-import { fetchPokemons } from '../actions'
+import { fetchPokemons, favoritePokemon, unfavoritePokemon } from '../actions'
 
 export class PokeList extends Component {
   componentDidMount(){
     this.props.fetchPokemons()
   }
+  
+  handleFavorite(pokemon){
+    if (pokemon.favorite === true){
+      return (
+        <Icon name="md-star" style={{color: 'black'}} onPress={()=>{this.props.unfavoritePokemon(pokemon)}}/>
+      )
+    } else {
+      return (
+        <Icon name="md-star-outline" style={{color: 'black'}} onPress={()=>{this.props.favoritePokemon(pokemon)}}/>
+      )
+    }
+  }
+  
   render(){
     return (
-      <Content>
-        <List>
-          {this.props.pokemons.map(pokemon=>
-            <ListItem avatar key={pokemon.id}>
-                <Left>
-                  <Thumbnail source={{uri: 'http://assets.pokemon.com/assets/cms2/img/pokedex/detail/' + ('000' + pokemon.id.toString()).substr(-3) + '.png'}} />
-                </Left>
-                <Body>
-                  <Text>{pokemon.name}</Text>
-                </Body>
-                <Right>
-                  <Icon name="star" />
-                </Right>
-            </ListItem>
-          )}
-        </List>
-      </Content>
+      <Container>
+        <Content>
+          <List>
+            {this.props.pokemons.sort(function(a, b) {
+                return (a.id - b.id);
+            }).map(pokemon=>
+              <ListItem icon key={pokemon.id}>
+                  <Left>
+                    <Thumbnail source={{ uri: 'http://assets.pokemon.com/assets/cms2/img/pokedex/detail/' + ('000' + pokemon.id.toString()).substr(-3) + '.png' }}/>
+                  </Left>
+                  <Body>
+                    <Text>{pokemon.name}</Text>
+                  </Body>
+                  <Right>
+                    {this.handleFavorite(pokemon)}
+                  </Right>
+              </ListItem>
+            )}
+          </List>
+        </Content>
+      </Container>
     );
   }
 }
@@ -41,6 +58,12 @@ const mapDispatchToProps = (dispatch) => {
   return ({
     fetchPokemons: () => {
       return dispatch(fetchPokemons())
+    },
+    favoritePokemon: (pokemon) => {
+      return dispatch(favoritePokemon(pokemon))
+    },
+    unfavoritePokemon: (pokemon) => {
+      return dispatch(unfavoritePokemon(pokemon))
     }
   })
 }

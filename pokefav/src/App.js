@@ -1,18 +1,14 @@
 import React, { Component } from 'react'
 import { View } from 'react-native'
-import { Container } from 'native-base'
+import { TabNavigator } from "react-navigation";
 
 import PokeList from './components/PokeList'
+import PokeFav from './components/PokeFav'
 
-export class App extends Component {
-  render(){
-    return (
-      <Container>
-      <PokeList/>
-      </Container>
-    );
-  }
-}
+const App = TabNavigator({
+  PokeList: { screen: PokeList},
+  PokeFav: { screen: PokeFav}
+})
 
 export default App
 

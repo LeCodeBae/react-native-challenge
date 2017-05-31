@@ -2,15 +2,18 @@
   "pokemons": [
     {
       "id": 1,
-      "name": "bulbasaur"
+      "name": "bulbasaur",
+      "favorite": false
     },
     {
       "id": 2,
-      "name": "ivysaur"
+      "name": "ivysaur",
+      "favorite": false
     },
     {
       "id": 3,
-      "name": "venusaur"
+      "name": "venusaur",
+      "favorite": true
     },
     {
       "id": 4,
@@ -22,7 +25,8 @@
     },
     {
       "id": 6,
-      "name": "charizard"
+      "name": "charizard",
+      "favorite": true
     },
     {
       "id": 7,
@@ -34,7 +38,8 @@
     },
     {
       "id": 9,
-      "name": "blastoise"
+      "name": "blastoise",
+      "favorite": true
     },
     {
       "id": 10,
@@ -574,7 +579,8 @@
     },
     {
       "id": 144,
-      "name": "articuno"
+      "name": "articuno",
+      "favorite": true
     },
     {
       "id": 145,
