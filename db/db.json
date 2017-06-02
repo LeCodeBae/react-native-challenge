@@ -105,7 +105,8 @@
     },
     {
       "id": 25,
-      "name": "pikachu"
+      "name": "pikachu",
+      "favorite": true
     },
     {
       "id": 26,

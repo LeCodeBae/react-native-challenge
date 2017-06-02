@@ -4,7 +4,7 @@ import * as actionType from './constants'
 
 export const fetchPokemons = () => {
   return (dispatch) => {
-    axios.get('http://4e7093e9.ngrok.io/pokemons')
+    axios.get('http://4b5a9f03.ngrok.io/pokemons')
     .then((res)=>{
       dispatch(fetchPokemonsSuccess(res.data))
     }).catch((err)=>{
@@ -15,7 +15,7 @@ export const fetchPokemons = () => {
 
 export const favoritePokemon = (pokemon) =>{
   return (dispatch) => {
-    axios.patch('http://4e7093e9.ngrok.io/pokemons/' + pokemon.id, {
+    axios.patch('http://4b5a9f03.ngrok.io/pokemons/' + pokemon.id, {
       favorite: true
     }).then((res)=>{
       dispatch(editPokemonSuccess(res.data))
@@ -27,7 +27,7 @@ export const favoritePokemon = (pokemon) =>{
 
 export const unfavoritePokemon = (pokemon) =>{
   return (dispatch) => {
-    axios.patch('http://4e7093e9.ngrok.io/pokemons/' + pokemon.id, {
+    axios.patch('http://4b5a9f03.ngrok.io/pokemons/' + pokemon.id, {
       favorite: false
     }).then((res)=>{
       dispatch(editPokemonSuccess(res.data))

@@ -4,7 +4,6 @@ import { Image } from 'react-native';
 import { Container, Content, Card, CardItem, Text, Left, Body } from 'native-base';
 
 export class PokeFav extends Component {
-  
   render(){
     return(
       <Container>

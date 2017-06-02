@@ -1,0 +1,550 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render component 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "height": 1334,
+    }
+  }
+  virtual={undefined}
+>
+  <View>
+    <View
+      rounded={true}
+      searchBar={true}
+      style={
+        Object {
+          "backgroundColor": "#F8F8F8",
+          "borderBottomColor": "#a7a6ab",
+          "borderBottomWidth": 0.5,
+          "elevation": 3,
+          "flexDirection": "row",
+          "height": 64,
+          "justifyContent": "center",
+          "left": 0,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 15,
+          "right": 0,
+          "top": 0,
+        }
+      }
+      virtual={undefined}
+    >
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "alignSelf": "center",
+            "backgroundColor": "#CECDD2",
+            "borderBottomWidth": 1,
+            "borderColor": "transparent",
+            "borderLeftWidth": 0,
+            "borderRadius": 25,
+            "borderRightWidth": 0,
+            "borderTopWidth": 0,
+            "flex": 1,
+            "flexDirection": "row",
+            "height": 30,
+            "justifyContent": "flex-start",
+            "marginLeft": 2,
+            "opacity": 1,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 12,
+              },
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "color": "#414142",
+                "fontSize": 20,
+                "marginTop": 2,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+              },
+              Object {
+                "fontFamily": "Ionicons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }
+          virtual={undefined}
+        >
+          
+        </Text>
+        <TextInput
+          editable={true}
+          onChangeText={[Function]}
+          placeholder="Search for pokemon"
+          placeholderTextColor="#575757"
+          style={
+            Object {
+              "alignSelf": "center",
+              "color": "#000",
+              "flex": 1,
+              "fontSize": 17,
+              "height": 30,
+              "lineHeight": 24,
+              "paddingLeft": 5,
+              "paddingRight": 5,
+              "top": 1.5,
+            }
+          }
+          underlineColorAndroid="rgba(0,0,0,0)"
+          virtual={undefined}
+        />
+      </View>
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "alignSelf": "center",
+            "backgroundColor": "transparent",
+            "borderBottomWidth": null,
+            "borderColor": "#007aff",
+            "borderLeftWidth": null,
+            "borderRadius": 5,
+            "borderRightWidth": null,
+            "borderTopWidth": null,
+            "elevation": 0,
+            "flexDirection": "row",
+            "height": 45,
+            "justifyContent": "center",
+            "opacity": 1,
+            "paddingBottom": 6,
+            "paddingLeft": 10,
+            "paddingRight": null,
+            "paddingTop": 6,
+            "shadowColor": null,
+            "shadowOffset": null,
+            "shadowOpacity": null,
+            "shadowRadius": null,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#007aff",
+              "fontFamily": "System",
+              "fontSize": 16.5,
+              "fontWeight": "500",
+              "lineHeight": 19,
+              "marginLeft": 0,
+              "marginRight": 0,
+            }
+          }
+          virtual={undefined}
+        >
+          Search
+        </Text>
+      </View>
+    </View>
+  </View>
+  <RCTScrollView
+    automaticallyAdjustContentInsets={false}
+    contentInset={
+      Object {
+        "bottom": 0,
+      }
+    }
+    enableAutoAutomaticScroll={true}
+    enableResetScrollToCoords={true}
+    extraHeight={75}
+    extraScrollHeight={0}
+    keyboardDismissMode="interactive"
+    onScroll={[Function]}
+    resetScrollToCoords={
+      Object {
+        "x": 0,
+        "y": 0,
+      }
+    }
+    scrollEventThrottle={0}
+    showsVerticalScrollIndicator={true}
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "flex": 1,
+      }
+    }
+    virtual={undefined}
+  >
+    <View>
+      <RCTScrollView
+        dataArray={
+          Array [
+            Object {
+              "id": 1,
+              "name": "bulbasaur",
+            },
+          ]
+        }
+        dataSource={
+          ListViewDataSource {
+            "items": 1,
+          }
+        }
+        enableEmptySections={true}
+        renderRow={[Function]}
+        renderScrollComponent={[Function]}
+        style={Object {}}
+        virtual={undefined}
+      >
+        <View>
+          <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            hasTVPreferredFocus={undefined}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                },
+                undefined,
+              ]
+            }
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <View
+              icon={true}
+              style={
+                Object {
+                  "alignItems": "center",
+                  "borderBottomWidth": null,
+                  "borderColor": "#c9c9c9",
+                  "flexDirection": "row",
+                  "height": 44,
+                  "justifyContent": "center",
+                  "marginLeft": 15,
+                  "paddingBottom": null,
+                  "paddingRight": null,
+                  "paddingTop": null,
+                }
+              }
+              virtual={undefined}
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "alignSelf": "center",
+                    "flex": 0,
+                    "flexDirection": "row",
+                    "height": 44,
+                    "justifyContent": "center",
+                    "paddingRight": 15,
+                  }
+                }
+                virtual={undefined}
+              >
+                <Image
+                  source={
+                    Object {
+                      "uri": "http://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png",
+                    }
+                  }
+                  style={
+                    Object {
+                      "borderRadius": 28,
+                      "height": 56,
+                      "width": 56,
+                    }
+                  }
+                  virtual={undefined}
+                />
+              </View>
+              <View
+                style={
+                  Object {
+                    "alignItems": null,
+                    "alignSelf": null,
+                    "borderBottomWidth": 0.5,
+                    "borderColor": "#c9c9c9",
+                    "flex": 1,
+                    "height": 44,
+                    "justifyContent": "center",
+                  }
+                }
+                virtual={undefined}
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#000",
+                      "fontFamily": "System",
+                      "fontSize": 17,
+                      "marginLeft": null,
+                      "marginRight": 10,
+                    }
+                  }
+                  virtual={undefined}
+                >
+                  bulbasaur
+                </Text>
+              </View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "alignSelf": "stretch",
+                    "borderBottomWidth": 0.5,
+                    "borderColor": "#c9c9c9",
+                    "flex": 0,
+                    "flexDirection": "row",
+                    "height": 44,
+                    "justifyContent": "flex-end",
+                    "paddingBottom": null,
+                    "paddingLeft": null,
+                    "paddingRight": 15,
+                    "paddingTop": null,
+                  }
+                }
+                virtual={undefined}
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={false}
+                  ellipsizeMode="tail"
+                  onPress={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "color": undefined,
+                        "fontSize": 12,
+                      },
+                      Object {
+                        "alignSelf": "center",
+                        "color": "black",
+                        "fontSize": 27,
+                        "paddingLeft": 10,
+                        "paddingTop": 3,
+                      },
+                      Object {
+                        "fontFamily": "Ionicons",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                      },
+                    ]
+                  }
+                  virtual={undefined}
+                >
+                  
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </RCTScrollView>
+    </View>
+  </RCTScrollView>
+  <Modal
+    animationType="fade"
+    hardwareAccelerated={false}
+    onRequestClose={[Function]}
+    supportedOrientations={null}
+    transparent={true}
+    visible={false}
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "justifyContent": "flex-start",
+          "margin": 20,
+        }
+      }
+    >
+      <View
+        danger={false}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "rgba(0,0,0,0.8)",
+            "borderRadius": 5,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "minHeight": 50,
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+          }
+        }
+        success={false}
+        virtual={undefined}
+        warning={false}
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#fff",
+              "flex": 1,
+              "fontFamily": "System",
+              "fontSize": 16,
+            }
+          }
+          virtual={undefined}
+        />
+      </View>
+    </View>
+  </Modal>
+  <Modal
+    animationType="fade"
+    hardwareAccelerated={false}
+    onRequestClose={[Function]}
+    transparent={true}
+    visible={false}
+  >
+    <View
+      accessibilityComponentType={undefined}
+      accessibilityLabel={undefined}
+      accessibilityTraits={undefined}
+      accessible={true}
+      hitSlop={undefined}
+      isTVSelectable={true}
+      onLayout={undefined}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "backgroundColor": "rgba(0,0,0,0.4)",
+          "flex": 1,
+          "justifyContent": "flex-end",
+          "opacity": 1,
+        }
+      }
+      testID={undefined}
+      tvParallaxProperties={undefined}
+    >
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#fff",
+            "elevation": 4,
+            "height": NaN,
+            "opacity": 1,
+            "padding": 15,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#757575",
+              "fontFamily": "System",
+              "fontSize": 16,
+            }
+          }
+          virtual={undefined}
+        />
+        <RCTScrollView
+          dataArray={Array []}
+          dataSource={
+            ListViewDataSource {
+              "items": 0,
+            }
+          }
+          enableEmptySections={true}
+          renderRow={[Function]}
+          renderScrollComponent={[Function]}
+          style={
+            Object {
+              "marginHorizontal": -15,
+              "marginTop": 15,
+            }
+          }
+          virtual={undefined}
+        >
+          <View />
+        </RCTScrollView>
+      </View>
+    </View>
+  </Modal>
+</View>
+`;
